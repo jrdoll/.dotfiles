@@ -1,0 +1,2 @@
+# Enable vim emulation for programs that use GNU readline (includes python REPL)
+set editing-mode vim
