@@ -82,10 +82,13 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
+"----------------Themes-----------------
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'mhartington/oceanic-next'
 Plug 'jacoborus/tender.vim'
 Plug 'arcticicestudio/nord-vim'
+"---------------------------------------
+Plug 'preservim/nerdtree'
 call plug#end()
 
 colorscheme nord
