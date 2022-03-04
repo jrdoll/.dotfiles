@@ -13,6 +13,7 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.alacritty.yml: alacritty.yml
 
 - shell:
     - 
