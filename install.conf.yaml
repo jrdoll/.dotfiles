@@ -12,6 +12,10 @@
     ~/.alacritty.yml: alacritty.yml
 
 - shell:
+    -
+      command: brew install zsh-autosuggestions
+      stderr: true
+      stdout: true
     - 
       command: brew install pyenv
       stderr: true

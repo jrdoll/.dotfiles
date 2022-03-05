@@ -5,3 +5,4 @@ bindkey -v
 bindkey '^R' history-incremental-search-backward
 
 PS1='%~: '
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
