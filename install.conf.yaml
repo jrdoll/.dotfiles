@@ -2,17 +2,13 @@
     link:
       relink: true
 
-- clean:
-  ~:
-    force: true
-    recursive: true
-
 - link:
     ~/.tmux.conf: tmux.conf
     ~/.inputrc: inputrc
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
+    ~/.zshenv: zshenv
     ~/.alacritty.yml: alacritty.yml
 
 - shell:
@@ -26,13 +22,5 @@
       stdout: true
     - 
       command: brew install tmuxp
-      stderr: true
-      stdout: true
-    -
-      command: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended --keep-zshrc
-      stderr: true
-      stdout: true
-    - 
-      command: cp jeremy.zsh-theme $HOME/.oh-my-zsh/themes/; env zsh;
       stderr: true
       stdout: true
