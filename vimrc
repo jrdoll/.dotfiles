@@ -3,6 +3,7 @@ set expandtab
 set softtabstop=4
 set shiftwidth=4
 set number relativenumber
+nmap t o<Esc> k
 syntax enable
 filetype indent on
 command! Fjson execute "%!python -m json.tool"
